@@ -1,0 +1,1739 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- =====================================================
+         PMAI LAB — PORTABLE COURSE PAGE
+         Version 1.0
+    ====================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <!-- =====================================================
+         EDIT COURSE INFORMATION HERE
+    ====================================================== -->
+
+    <title>
+        Linear Algebra For Machine Learning | PMAI Lab
+    </title>
+
+    <meta name="description"
+          content="This course develops the essential linear algebra foundations for machine learning, including vectors, matrices, transformations, eigenvalues, orthogonality, least squares, and SVD. Students will connect each mathematical concept with practical machine learning applications through Python-based implementations and real-world computational problems.">
+
+    <meta name="keywords"
+          content="Linear Systems, Vectors, Dimensionality Reduction, Neural Networks, Singular Value Decomposition, Python, NumPy.">
+
+    <meta name="author"
+          content="PMAI Lab Faculty">
+
+    <meta name="robots"
+          content="index, follow">
+
+
+    <!-- =====================================================
+         CSS
+         IMPORTANT:
+         Keep course-page.css in the SAME folder.
+    ====================================================== -->
+
+    <link rel="stylesheet"
+          href="course-page.css">
+
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+                         NAVIGATION
+    ====================================================== -->
+
+    <header class="course-header">
+
+        <nav class="course-navbar">
+
+            <div class="course-nav-container">
+
+
+                <!-- =================================================
+                             PMAI LAB BRAND
+                ================================================== -->
+     <a href="index.html" class="navbar-logo" aria-label="PMAI Lab Home">
+  <div class="logo-symbol">
+    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="pmaiGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#2563eb"/>
+          <stop offset="100%" stop-color="#7c3aed"/>
+        </linearGradient>
+      </defs>
+      <!-- Geometry / Network Symbol -->
+      <polygon points="50,15 85,50 50,85 15,50" stroke="url(#pmaiGlow)" stroke-width="6" fill="none"/>
+      <line x1="50" y1="15" x2="50" y2="85" stroke="url(#pmaiGlow)" stroke-width="3" stroke-dasharray="4 4"/>
+      <line x1="15" y1="50" x2="85" y2="50" stroke="url(#pmaiGlow)" stroke-width="3" stroke-dasharray="4 4"/>
+      <circle cx="50" cy="15" r="7" fill="#2563eb"/>
+      <circle cx="85" cy="50" r="7" fill="#6366f1"/>
+      <circle cx="50" cy="85" r="7" fill="#7c3aed"/>
+      <circle cx="15" cy="50" r="7" fill="#2563eb"/>
+      <circle cx="50" cy="50" r="8" fill="#0f172a"/>
+    </svg>
+  </div>
+
+  <div class="logo-text">
+    <span class="logo-main">PMAI <span class="accent">LAB</span></span>
+    <span class="logo-sub">Mathematics • Python • AI</span>
+  </div>
+</a>
+
+
+                <!-- =================================================
+                             MOBILE MENU
+                ================================================== -->
+
+                <button
+                    class="course-menu-toggle"
+                    id="course-menu-toggle"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false">
+
+                    ☰
+
+                </button>
+
+
+                <!-- =================================================
+                             NAVIGATION LINKS
+                ================================================== -->
+
+                <ul class="course-nav-menu"
+                    id="course-nav-menu">
+
+                    <li>
+    <a href="https://python-mathematics-ai-lab.github.io/"
+       class="PMAI Lab"
+       target="_blank"
+       rel="noopener noreferrer"
+        class="cta-secondary">
+        PMAI Lab
+    </a>
+</li>
+
+                    <li>
+                        <a href="#overview">
+                            Overview
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#faculty">
+                            Faculty
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#lectures">
+                            Lectures
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#assignments">
+                            Assignments
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#resources">
+                            Resources
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =====================================================
+                         MAIN CONTENT
+    ====================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+                         COURSE HERO
+        ================================================== -->
+
+        <section class="course-page-hero">
+
+            <div class="course-container">
+
+
+                <!-- BACK TO PMAI LAB -->
+
+                <a
+                    href="https://python-mathematics-ai-lab.github.io/courses.html"
+                    class="Course"
+   target="_blank"
+   rel="noopener noreferrer">
+     
+
+                    ← Back to PMAI Lab Courses
+
+                </a>
+
+
+                <!-- COURSE CATEGORY -->
+
+                <span class="course-label">
+                    Computer Science
+                </span>
+
+
+                <!-- COURSE TITLE -->
+
+                <h1>
+                    Linear Algebra For ML
+                </h1>
+
+
+                <!-- COURSE CODE -->
+
+                <p class="course-code">
+                    
+                </p>
+
+
+                <!-- COURSE INTRODUCTION -->
+
+                <p class="course-introduction">
+
+                    Learn the linear algebra behind machine learning through practical concepts and applications. Use Python and NumPy to explore vectors, transformations, SVD, and data representation.
+
+                </p>
+
+
+                <!-- =================================================
+                             COURSE META
+                ================================================== -->
+
+                <div class="course-meta-grid">
+
+
+                    <div class="meta-card">
+
+                        <span>
+                            Academic Year
+                        </span>
+
+                        <strong>
+                            
+                        </strong>
+
+                    </div>
+
+
+                    <div class="meta-card">
+
+                        <span>
+                            Semester
+                        </span>
+
+                        <strong>
+                            
+                        </strong>
+
+                    </div>
+
+
+                    <div class="meta-card">
+
+                        <span>
+                            Credit Hours
+                        </span>
+
+                        <strong>
+                            
+                        </strong>
+
+                    </div>
+
+
+                    <div class="meta-card">
+
+                        <span>
+                            Course Code
+                        </span>
+
+                        <strong>
+                            
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+                         COURSE BODY
+        ================================================== -->
+
+        <section class="course-information">
+
+            <div class="course-container">
+
+                <div class="course-layout">
+
+
+                    <!-- =================================================
+                             MAIN CONTENT
+                    ================================================== -->
+
+                    <div class="course-main">
+
+
+                        <!-- =================================================
+                             OVERVIEW
+                        ================================================== -->
+
+                        <section
+                            id="overview"
+                            class="course-section">
+
+                            <span class="section-label">
+                                COURSE OVERVIEW
+                            </span>
+
+                            <h2>
+                                Course Description
+                            </h2>
+
+                            <p>
+                                This course introduces the essential linear algebra concepts used in machine learning, including vectors, matrices, linear transformations, eigenvalues, orthogonality, least squares, and SVD. Students will use Python and NumPy to connect mathematical theory with practical applications such as data representation, dimensionality reduction, and neural networks.
+                            </p>
+
+                            <p>
+                                Topics include: Vectors and Vector Spaces, 
+                                Matrix Operations and Linear Systems, Eigenvalues and Eigenvectors, 
+                                Orthogonality and Least-Squares Methods, 
+                                Singular Value Decomposition and Dimensionality Reduction
+                            </p>
+
+                        </section>
+
+
+
+                        <!-- =================================================
+                             LEARNING OUTCOMES
+                        ================================================== -->
+
+                        <section
+                            id="outcomes"
+                            class="course-section">
+
+                            <span class="section-label">
+                                LEARNING OUTCOMES
+                            </span>
+
+                            <h2>
+                                Course Learning Outcomes
+                            </h2>
+
+
+                            <div class="outcomes-list">
+
+
+                                <div class="outcome-card">
+
+                                    <span>
+                                        01
+                                    </span>
+
+                                    <p>
+                                        Apply vectors, matrices, and linear transformations
+                                        to represent machine-learning problems.
+                                    </p>
+
+                                </div>
+
+
+                                <div class="outcome-card">
+
+                                    <span>
+                                        02
+                                    </span>
+
+                                    <p>
+                                        Solve systems of linear equations using analytical methods and Python.
+                                    </p>
+
+                                </div>
+
+
+                                <div class="outcome-card">
+
+                                    <span>
+                                        03
+                                    </span>
+
+                                    <p>
+                                        Analyze data using eigenvalues, eigenvectors, orthogonality, and least-squares methods.
+                                    </p>
+
+                                </div>
+
+
+                                <div class="outcome-card">
+
+                                    <span>
+                                        04
+                                    </span>
+
+                                    <p>
+                                        Implement SVD and dimensionality-reduction techniques for machine-learning applications.
+                                    </p>
+
+                                </div>
+
+
+                            </div>
+
+                        </section>
+
+
+
+                        <!-- =================================================
+                             FACULTY
+                        ================================================== -->
+
+                        <section
+                            id="faculty"
+                            class="course-section">
+
+                            <span class="section-label">
+                                COURSE INSTRUCTOR
+                            </span>
+
+                            <h2>
+                                Faculty
+                            </h2>
+
+
+                            <div class="faculty-card">
+
+
+                                <div class="faculty-avatar">
+    <img src="hira.png"
+         alt="Hira Benish">
+</div>>
+
+
+                                <div class="faculty-information">
+
+                                    <h3>
+                                        Dr Hira Benish
+                                    </h3>
+
+                                    <p>
+                                        Associate Professor, Head of Mathematics Department
+                                    </p>
+
+                                    <span>
+                                        Riphah International University Sahiwal
+                                    </span>
+
+
+                                    <!-- =================================================
+                                         OPTIONAL FACULTY PROFILE
+                                    ================================================== -->
+
+                                    <div class="faculty-links">
+
+    <a href="https://drhirabenish.github.io/"
+       target="_blank"
+       rel="noopener">
+        Faculty Profile
+    </a>
+
+    <a href="https://github.com/DrHiraBenish"
+       target="_blank"
+       rel="noopener">
+        GitHub Profile
+    </a>
+
+</div>
+
+                                </div>
+
+                            </div>
+
+                        </section>
+
+
+
+                        <!-- =================================================
+                             COURSE OUTLINE
+                        ================================================== -->
+
+                        <section
+                            id="outline"
+                            class="course-section">
+
+                            <span class="section-label">
+                                COURSE DOCUMENT
+                            </span>
+
+                            <h2>
+                                Course Outline
+                            </h2>
+
+
+                            <div class="resource-card">
+
+
+                                <div class="resource-icon">
+                                    PDF
+                                </div>
+
+
+                                <div class="resource-information">
+
+                                    <h3>
+                                        Course Outline
+                                    </h3>
+
+                                    <p>
+                                        Official course outline
+                                        and syllabus.
+                                    </p>
+
+                                </div>
+
+
+                                <a
+                                    href="course-outline.pdf"
+                                    class="resource-button"
+                                    target="_blank"
+                                    rel="noopener">
+
+                                    View PDF
+
+                                </a>
+
+                            </div>
+
+                        </section>
+
+
+
+                        <!-- =================================================
+                             LECTURES
+                        ================================================== -->
+
+                        <section
+                            id="lectures"
+                            class="course-section">
+
+                            <span class="section-label">
+                                LEARNING MATERIALS
+                            </span>
+
+                            <h2>
+                                Lecture Notes
+                            </h2>
+
+
+                            <div class="resource-list">
+
+
+                                <!-- LECTURE 01 -->
+
+                                <div class="resource-card">
+
+                                    <div class="resource-icon">
+                                        01
+                                    </div>
+
+                                    <div class="resource-information">
+
+                                        <h3>
+                                            Lecture 01 — Introduction
+                                        </h3>
+
+                                        <p>
+                                            Introduction and Linear Systems
+                                            for Machine Learning
+                                        </p>
+
+                                    </div>
+
+                                    <a
+                                        href="lectures/lecture-01.pdf"
+                                        class="resource-button"
+                                        target="_blank"
+                                        rel="noopener">
+
+                                        PDF
+
+                                    </a>
+
+                                </div>
+
+
+
+                                <!-- LECTURE 02 -->
+
+                                <div class="resource-card">
+
+                                    <div class="resource-icon">
+                                        02
+                                    </div>
+
+                                    <div class="resource-information">
+
+                                        <h3>
+                                            Lecture 02 — Vector Spaces
+                                        </h3>
+
+                                        <p>
+                                            Vectors, Linear Combinations,
+                                            Span, and Feature Spaces.
+                                        </p>
+
+                                    </div>
+
+                                    <a
+                                        href="lectures/lecture-02.pdf"
+                                        class="resource-button"
+                                        target="_blank"
+                                        rel="noopener">
+
+                                        PDF
+
+                                    </a>
+
+                                </div>
+
+
+
+                                <!-- LECTURE 03 -->
+
+                                <div class="resource-card">
+
+                                    <div class="resource-icon">
+                                        03
+                                    </div>
+
+                                    <div class="resource-information">
+
+                                        <h3>
+                                            Lecture 03 — Linear Independence
+                                        </h3>
+
+                                        <p>
+                                            Vector Spaces, Subspaces,
+                                            Linear Independence, Basis, and Dimension.
+                                        </p>
+
+                                    </div>
+
+                                    <a
+                                        href="lectures/lecture-03.pdf"
+                                        class="resource-button"
+                                        target="_blank"
+                                        rel="noopener">
+
+                                        PDF
+
+                                    </a>
+
+                                </div>
+
+
+                            <!-- LECTURE 04 -->
+
+                                <div class="resource-card">
+
+                                    <div class="resource-icon">
+                                        04
+                                    </div>
+
+                                    <div class="resource-information">
+
+                                        <h3>
+                                            Lecture 04 — Linear Transformations
+                                        </h3>
+
+                                        <p>
+                                            Matrices as Linear Transformations,
+                                            Composition, Inverses, and Geometric Effects.
+                                        </p>
+
+                                    </div>
+
+                                    <a
+                                        href="lectures/lecture-04.pdf"
+                                        class="resource-button"
+                                        target="_blank"
+                                        rel="noopener">
+
+                                        PDF
+
+                                    </a>
+
+                                </div>
+
+
+                                <!-- LECTURE 05 -->
+
+                                <div class="resource-card">
+
+                                    <div class="resource-icon">
+                                        05
+                                    </div>
+
+                                    <div class="resource-information">
+
+                                        <h3>
+                                            Lecture 05 — Orthogonality
+                                        </h3>
+
+                                        <p>
+                                            Inner Products, Orthogonality, Orthonormal Bases, and
+                                            Vector Projections.
+                                        </p>
+
+                                    </div>
+
+                                    <a
+                                        href="lectures/lecture-05.pdf"
+                                        class="resource-button"
+                                        target="_blank"
+                                        rel="noopener">
+
+                                        PDF
+
+                                    </a>
+
+                                </div>
+
+
+
+                                <!-- LECTURE 06 -->
+
+                                <div class="resource-card">
+
+                                    <div class="resource-icon">
+                                        06
+                                    </div>
+
+                                    <div class="resource-information">
+
+                                        <h3>
+                                            Lecture 06 — Least-Squares Problems
+                                        </h3>
+
+                                        <p>
+                                            Least-Squares Problems, Normal Equations, Linear Regression,
+                                            and Model Fitting
+                                        </p>
+
+                                    </div>
+
+                                    <a
+                                        href="lectures/lecture-06.pdf"
+                                        class="resource-button"
+                                        target="_blank"
+                                        rel="noopener">
+
+                                        PDF
+
+                                    </a>
+
+                                </div>
+                                <!-- LECTURE 07 -->
+
+                                <div class="resource-card">
+
+                                    <div class="resource-icon">
+                                        07
+                                    </div>
+
+                                    <div class="resource-information">
+
+                                        <h3>
+                                            Lecture 07 — Eigenvalues, Eigenvectors
+                                        </h3>
+
+                                        <p>
+                                            Eigenvalues, Eigenvectors, Diagonalization, and Stable
+                                            Transformation Directions.
+                                        </p>
+
+                                    </div>
+
+                                    <a
+                                        href="lectures/lecture-07.pdf"
+                                        class="resource-button"
+                                        target="_blank"
+                                        rel="noopener">
+
+                                        PDF
+
+                                    </a>
+
+                                </div>
+                                <!-- LECTURE 08 -->
+
+                                <div class="resource-card">
+
+                                    <div class="resource-icon">
+                                        08
+                                    </div>
+
+                                    <div class="resource-information">
+
+                                        <h3>
+                                            Lecture 08 — Singular Value Decomposition
+                                        </h3>
+
+                                        <p>
+                                            Singular Value Decomposition, PCA,
+                                            Low-Rank Approximation, and
+                                            Data Compression.
+                                        </p>
+
+                                    </div>
+
+                                    <a
+                                        href="lectures/lecture-08.pdf"
+                                        class="resource-button"
+                                        target="_blank"
+                                        rel="noopener">
+
+                                        PDF
+
+                                    </a>
+
+                                </div>
+                                <!-- LECTURE 09 -->
+
+                                <div class="resource-card">
+
+                                    <div class="resource-icon">
+                                        09
+                                    </div>
+
+                                    <div class="resource-information">
+
+                                        <h3>
+                                            Lecture 09 — Neural Networks
+                                        </h3>
+
+                                        <p>
+                                            Neural Networks, Embeddings, Attention, and Gradient-Based Learning
+                                        </p>
+
+                                    </div>
+
+                                    <a
+                                        href="lectures/lecture-09.pdf"
+                                        class="resource-button"
+                                        target="_blank"
+                                        rel="noopener">
+
+                                        PDF
+
+                                    </a>
+
+                                </div>
+                                <!-- LECTURE 10 -->
+
+                                <div class="resource-card">
+
+                                    <div class="resource-icon">
+                                        10
+                                    </div>
+
+                                    <div class="resource-information">
+
+                                        <h3>
+                                            Lecture 10 — Continuity
+                                        </h3>
+
+                                        <p>
+                                           Integrated Machine-Learning Case Studies, Numerical Reliability,
+                                            and Course Review.
+                                        </p>
+
+                                    </div>
+
+                                    <a
+                                        href="lectures/lecture-10.pdf"
+                                        class="resource-button"
+                                        target="_blank"
+                                        rel="noopener">
+
+                                        PDF
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+                         
+
+
+                        </section>
+
+
+
+                        <!-- =================================================
+                             ASSIGNMENTS
+                        ================================================== -->
+
+                        <section
+                            id="assignments"
+                            class="course-section">
+
+                            <span class="section-label">
+                                PRACTICE
+                            </span>
+
+                            <h2>
+                                Assignments
+                            </h2>
+
+
+                            <div class="resource-list">
+
+
+                                <div class="resource-card">
+
+                                    <div class="resource-icon">
+                                        A1
+                                    </div>
+
+                                    <div class="resource-information">
+
+                                        <h3>
+                                            Assignment 01
+                                        </h3>
+
+                                        <p>
+                                            Coming soon....
+                                        </p>
+
+                                    </div>
+
+                                    <a
+                                        href="assignments/assignment-01.pdf"
+                                        class="resource-button"
+                                        target="_blank"
+                                        rel="noopener">
+
+                                        PDF
+
+                                    </a>
+
+                                </div>
+
+
+
+                                <div class="resource-card">
+
+                                    <div class="resource-icon">
+                                        A2
+                                    </div>
+
+                                    <div class="resource-information">
+
+                                        <h3>
+                                            Assignment 02
+                                        </h3>
+
+                                        <p>
+                                            Coming soon....
+                                        </p>
+
+                                    </div>
+
+                                    <a
+                                        href="assignments/assignment-02.pdf"
+                                        class="resource-button"
+                                        target="_blank"
+                                        rel="noopener">
+
+                                        PDF
+
+                                    </a>
+
+                                </div>
+                                
+                                <div class="resource-card">
+
+                                    <div class="resource-icon">
+                                        A3
+                                    </div>
+
+                                    <div class="resource-information">
+
+                                        <h3>
+                                            Assignment 03
+                                        </h3>
+
+                                        <p>
+                                            Coming soon....
+                                        </p>
+
+                                    </div>
+
+                                    <a
+                                        href="assignments/assignment-03.pdf"
+                                        class="resource-button"
+                                        target="_blank"
+                                        rel="noopener">
+
+                                        PDF
+
+                                    </a>
+
+                                </div>
+                                
+                                <div class="resource-card">
+
+                                    <div class="resource-icon">
+                                        A4
+                                    </div>
+
+                                    <div class="resource-information">
+
+                                        <h3>
+                                            Assignment 04
+                                        </h3>
+
+                                        <p>
+                                            Coming soon....
+                                        </p>
+
+                                    </div>
+
+                                    <a
+                                        href="assignments/assignment-04.pdf"
+                                        class="resource-button"
+                                        target="_blank"
+                                        rel="noopener">
+
+                                        PDF
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </section>
+
+
+
+                        <!-- =================================================
+                             QUIZZES
+                        ================================================== -->
+
+                        <section
+                            id="quizzes"
+                            class="course-section">
+
+                            <span class="section-label">
+                                ASSESSMENT
+                            </span>
+
+                            <h2>
+                                Quizzes
+                            </h2>
+
+
+                            <div class="resource-list">
+
+
+                                <div class="resource-card">
+
+                                    <div class="resource-icon">
+                                        Q1
+                                    </div>
+
+                                    <div class="resource-information">
+
+                                        <h3>
+                                            Quiz 01
+                                        </h3>
+
+                                        <p>
+                                            Coming Soon...
+                                        </p>
+
+                                    </div>
+
+                                    <a
+                                        href="quizzes/quiz-01.pdf"
+                                        class="resource-button"
+                                        target="_blank"
+                                        rel="noopener">
+
+                                        PDF
+
+                                    </a>
+
+                                </div>
+
+                                <div class="resource-card">
+
+                                    <div class="resource-icon">
+                                        Q2
+                                    </div>
+
+                                    <div class="resource-information">
+
+                                        <h3>
+                                            Quiz 02
+                                        </h3>
+
+                                        <p>
+                                            Coming Soon...
+                                        </p>
+
+                                    </div>
+
+                                    <a
+                                        href="quizzes/quiz-02.pdf"
+                                        class="resource-button"
+                                        target="_blank"
+                                        rel="noopener">
+
+                                        PDF
+
+                                    </a>
+
+                                </div>
+                                <div class="resource-card">
+
+                                    <div class="resource-icon">
+                                        Q3
+                                    </div>
+
+                                    <div class="resource-information">
+
+                                        <h3>
+                                            Quiz 03
+                                        </h3>
+
+                                        <p>
+                                            Coming Soon....
+                                        </p>
+
+                                    </div>
+
+                                    <a
+                                        href="quizzes/quiz-03.pdf"
+                                        class="resource-button"
+                                        target="_blank"
+                                        rel="noopener">
+
+                                        PDF
+
+                                    </a>
+
+                                </div>
+                                <div class="resource-card">
+
+                                    <div class="resource-icon">
+                                        Q4
+                                    </div>
+
+                                    <div class="resource-information">
+
+                                        <h3>
+                                            Quiz 04
+                                        </h3>
+
+                                        <p>
+                                            Coming Soon...
+                                        </p>
+
+                                    </div>
+
+                                    <a
+                                        href="quizzes/quiz-04.pdf"
+                                        class="resource-button"
+                                        target="_blank"
+                                        rel="noopener">
+
+                                        PDF
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </section>
+
+
+
+                        <!-- =================================================
+                             CASE STUDY
+                        ================================================== -->
+
+                        <section
+                            id="case-study"
+                            class="course-section">
+
+                            <span class="section-label">
+                                CASE STUDY RESOURSCES
+                            </span>
+
+                            <h2>
+                                Case Study
+                            </h2>
+
+
+                            <div class="resource-list">
+
+
+                                <div class="resource-card">
+
+                                    <div class="resource-icon">
+                                        CS
+                                    </div>
+
+                                    <div class="resource-information">
+
+                                        <h3>
+                                            Case Study 01
+                                        </h3>
+
+                                        <p>
+                                            Real-Life Scenario,
+                                            Analysis
+                                        </p>
+
+                                    </div>
+
+                                    <a
+                                        href="case-study/case-study-01.pdf"
+                                        class="resource-button"
+                                        target="_blank"
+                                        rel="noopener">
+
+                                        PDF
+
+                                    </a>
+
+                                </div>
+
+
+
+                                <div class="resource-card">
+
+                                    <div class="resource-icon">
+                                        CS
+                                    </div>
+
+                                    <div class="resource-information">
+
+                                        <h3>
+                                            Case Study 02
+                                        </h3>
+
+                                        <p>
+                                            Real-Life Example
+                                            Python.
+                                        </p>
+
+                                    </div>
+
+                                    <a
+                                        href="case-study/case-study-02.pdf"
+                                        class="resource-button"
+                                        target="_blank"
+                                        rel="noopener">
+
+                                        PDF
+
+                                    </a>
+
+                                </div>
+
+
+                            </div>
+
+                        </section>
+
+
+
+                        <!-- =================================================
+                             ADDITIONAL RESOURCES
+                        ================================================== -->
+
+                        <section
+                            id="resources"
+                            class="course-section">
+
+                            <span class="section-label">
+                                FURTHER LEARNING
+                            </span>
+
+                            <h2>
+                                Additional Resources
+                            </h2>
+
+
+                            <div class="resource-list">
+
+
+                                <div class="resource-card">
+
+                                    <div class="resource-icon">
+                                        R1
+                                    </div>
+
+                                    <div class="resource-information">
+
+                                        <h3>
+                                            Reference Material
+                                        </h3>
+
+                                        <p>
+                                            Supplementary mathematical
+                                            learning material.
+                                        </p>
+
+                                    </div>
+
+                                    <a
+                                        href="additional-resources/reference-material.pdf"
+                                        class="resource-button"
+                                        target="_blank"
+                                        rel="noopener">
+
+                                        PDF
+
+                                    </a>
+
+                                </div>
+
+
+                            </div>
+
+                        </section>
+
+
+
+                        <!-- =================================================
+                             EXTERNAL LINKS
+                        ================================================== -->
+
+                        <section
+                            id="links"
+                            class="course-section">
+
+                            <span class="section-label">
+                                ONLINE RESOURCES
+                            </span>
+
+                            <h2>
+                                Useful Links
+                            </h2>
+
+
+                            <div class="external-links">
+
+
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    rel="noopener">
+
+                                    <span>
+                                        GitHub Repository
+                                    </span>
+
+                                    <strong>
+                                        →
+                                    </strong>
+
+                                </a>
+
+
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    rel="noopener">
+
+                                    <span>
+                                        Course Video Lectures
+                                    </span>
+
+                                    <strong>
+                                        →
+                                    </strong>
+
+                                </a>
+
+
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    rel="noopener">
+
+                                    <span>
+                                        Additional Online Resources
+                                    </span>
+
+                                    <strong>
+                                        →
+                                    </strong>
+
+                                </a>
+
+
+                            </div>
+
+                        </section>
+
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                             SIDEBAR
+                    ================================================== -->
+
+                    <aside class="course-sidebar">
+
+
+                        <!-- NAVIGATION -->
+
+                        <div class="sidebar-card">
+
+                            <h3>
+                                Course Navigation
+                            </h3>
+
+
+                            <a href="#overview">
+                                Overview
+                            </a>
+
+                            <a href="#outcomes">
+                                Learning Outcomes
+                            </a>
+
+                            <a href="#faculty">
+                                Faculty
+                            </a>
+
+                            <a href="#outline">
+                                Course Outline
+                            </a>
+
+                            <a href="#lectures">
+                                Lecture Notes
+                            </a>
+
+                            <a href="#assignments">
+                                Assignments
+                            </a>
+
+                            <a href="#quizzes">
+                                Quizzes
+                            </a>
+
+                            <a href="#past-papers">
+                                Past Papers
+                            </a>
+
+                            <a href="#resources">
+                                Additional Resources
+                            </a>
+
+                            <a href="#links">
+                                Useful Links
+                            </a>
+
+                        </div>
+
+
+
+                        <!-- COURSE SUMMARY -->
+
+                        <div class="sidebar-card sidebar-highlight">
+
+                            <span>
+                                
+                            </span>
+
+                            <h3>
+                                Python-Programming
+                            </h3>
+
+                            <p>
+                                
+                            </p>
+
+                            <p>
+                                
+                            </p>
+
+
+                            <a
+                                href="https://python-mathematics-ai-lab.github.io/courses.html"
+                                 target="_blank"
+                                rel="noopener">
+
+                                ← All Courses
+
+                           </a>
+
+                        </div>
+
+
+                    </aside>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+                             COLLABORATION CTA
+        ================================================== -->
+
+        <section class="course-cta">
+
+            <div class="course-container">
+
+
+                <span class="section-label">
+                    PMAI LAB
+                </span>
+
+
+                <h2>
+                    Want to Collaborate or Share Resources?
+                </h2>
+
+
+                <p>
+                    Faculty members can contribute course
+                    materials, research resources, lectures,
+                    assignments and academic content to the
+                    PMAI Lab network.
+                </p>
+
+
+                <div class="cta-actions">
+
+
+                    <a
+                        href="https://python-mathematics-ai-lab.github.io/contact.html"
+                        target="_blank"
+                        rel="noopener"
+                        class="cta-secondary">
+
+                        Contact PMAI Lab
+
+                    </a>
+
+
+                    <a
+                        href="https://github.com/"
+                        target="_blank"
+                        rel="noopener"
+                        class="cta-secondary">
+
+                        GitHub
+
+                    </a>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+                         FOOTER
+    ====================================================== -->
+
+    <footer class="course-footer">
+
+        <div class="course-container">
+
+            <p>
+                © 2026 Python, Mathematics & Artificial
+                Intelligence Lab.
+            </p>
+
+            <p>
+                Independent Faculty Course Resource
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+                         JAVASCRIPT
+         Portable — no external JS dependency.
+    ====================================================== -->
+
+    <script>
+
+        document.addEventListener(
+            "DOMContentLoaded",
+            function () {
+
+                const menuToggle =
+                    document.getElementById(
+                        "course-menu-toggle"
+                    );
+
+                const navMenu =
+                    document.getElementById(
+                        "course-nav-menu"
+                    );
+
+
+                if (menuToggle && navMenu) {
+
+                    menuToggle.addEventListener(
+                        "click",
+                        function () {
+
+                            const isOpen =
+                                navMenu.classList.toggle(
+                                    "is-open"
+                                );
+
+                            menuToggle.setAttribute(
+                                "aria-expanded",
+                                isOpen
+                            );
+
+                        }
+                    );
+
+
+                    navMenu
+                        .querySelectorAll("a")
+                        .forEach(function (link) {
+
+                            link.addEventListener(
+                                "click",
+                                function () {
+
+                                    navMenu.classList.remove(
+                                        "is-open"
+                                    );
+
+                                    menuToggle.setAttribute(
+                                        "aria-expanded",
+                                        "false"
+                                    );
+
+                                }
+                            );
+
+                        });
+
+                }
+
+
+                /* =================================================
+                   SMOOTH SCROLL
+                ================================================== */
+
+                document
+                    .querySelectorAll(
+                        'a[href^="#"]'
+                    )
+                    .forEach(function (link) {
+
+                        link.addEventListener(
+                            "click",
+                            function (event) {
+
+                                const targetId =
+                                    this.getAttribute(
+                                        "href"
+                                    );
+
+                                if (
+                                    targetId &&
+                                    targetId !== "#"
+                                ) {
+
+                                    const target =
+                                        document.querySelector(
+                                            targetId
+                                        );
+
+                                    if (target) {
+
+                                        event.preventDefault();
+
+                                        target.scrollIntoView({
+                                            behavior: "smooth",
+                                            block: "start"
+                                        });
+
+                                    }
+
+                                }
+
+                            }
+                        );
+
+                    });
+
+            }
+        );
+
+    </script>
+
+
+</body>
+
+</html>
